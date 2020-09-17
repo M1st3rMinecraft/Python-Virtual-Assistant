@@ -23,7 +23,7 @@ from time import sleep
 engine = pyttsx3.init()
 today = datetime.date.today()
 t = datetime.datetime.now()
-api_key = 'AIzaSyC1D2P1mOU9k_BSp_dsfKxSaghDEvAy5Bw'
+api_key = '****************************'
 youtube = build('youtube', 'v3', developerKey=api_key)
 (width, height) = (100, 100)
 pygame.mixer.init()
@@ -425,7 +425,7 @@ def assistant(command):
                 reg_ex = re.search('current weather in (.*)', cmd)
                 if reg_ex:
                     city = reg_ex.group(1)
-                    owm = OWM(API_key='ab0d5e80e8dafb2cb81fa9e82431c1fa')
+                    owm = OWM(API_key='*************************')
                     obs = owm.weather_at_place(city)
                     w = obs.get_weather()
                     k = w.get_status()
